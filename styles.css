@@ -4,7 +4,7 @@
   --rgba-gray-color-: rgba(255, 255, 255, 0.8);
   --text-color-black-: #000000;
   --buttons-link-: rgba(255, 255, 255, 0.02);
-  --background-mobile-cell-dark: url(/assets/assets/bg-mobile.jpg);
+  --bg-body-: url(/assets/assets/bg-mobile.jpg);
   --switch-bg-: url(/assets/assets/moon-stars.svg);
 }
 
@@ -14,7 +14,7 @@
   --rgba-gray-color-: rgba(0, 0, 0, 0.8);
   --text-color-black-: #ffffff;
   --buttons-link-: rgba(0, 0, 0, 0.05);
-  --background-mobile-cell-dark: url(/assets/assets/bg-mobile-light.jpg);
+  --bg-body-: url(/assets/assets/bg-mobile-light.jpg);
   --switch-bg-: url(/assets/assets/sun.svg);
 }
 
@@ -26,8 +26,9 @@ body {
 
   /*short hand ou atalho*/
   /*ordem* color img, repeat, position, size*/
-  background: var(--background-mobile-cell-dark) no-repeat top center/cover;
+  background: var(--bg-body-) no-repeat top center/cover;
   font-size: 16px;
+  height: 100vh;
 }
 
 body * {
@@ -192,3 +193,13 @@ footer a {
   font-size: 16px;
 }
 /*Fim do Footer*/
+
+/*Media Queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-body-: url(./assets/assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-body-: url(./assets/assets/bg-desktop-light.jpg);
+  }
+}
