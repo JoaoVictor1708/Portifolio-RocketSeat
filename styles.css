@@ -1,0 +1,194 @@
+:root {
+  --text-color-white-: #ffffff;
+  --rgba-hover-button-: rgba(255, 255, 255, 0.05);
+  --rgba-gray-color-: rgba(255, 255, 255, 0.8);
+  --text-color-black-: #000000;
+  --buttons-link-: rgba(255, 255, 255, 0.02);
+  --background-mobile-cell-dark: url(/assets/assets/bg-mobile.jpg);
+  --switch-bg-: url(/assets/assets/moon-stars.svg);
+}
+
+.light {
+  --text-color-white-: #000000;
+  --rgba-hover-button-: rgba(0, 0, 0, 0.05);
+  --rgba-gray-color-: rgba(0, 0, 0, 0.8);
+  --text-color-black-: #ffffff;
+  --buttons-link-: rgba(0, 0, 0, 0.05);
+  --background-mobile-cell-dark: url(/assets/assets/bg-mobile-light.jpg);
+  --switch-bg-: url(/assets/assets/sun.svg);
+}
+
+body {
+  /*background-image: url(/assets/assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;*/
+
+  /*short hand ou atalho*/
+  /*ordem* color img, repeat, position, size*/
+  background: var(--background-mobile-cell-dark) no-repeat top center/cover;
+  font-size: 16px;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color-white-);
+}
+
+#container {
+  box-sizing: border-box;
+  padding: 0 24px;
+  width: 360px;
+  height: 712px;
+  border-radius: 15px;
+  margin: 56px auto 0;
+}
+
+/*Inicio do Primeiro Bloco*/
+.firstblock {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#imgdev img {
+  width: 112px;
+  margin: 30px 0 0 0;
+}
+
+#instaprofile {
+  color: var(--text-color-white-);
+  font-weight: 540;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+
+/*.firstblock #switch {
+  width: 150px;
+  padding: 10px;
+  font-size: 13;
+  font-weight: 500;
+  background: transparent;
+  border-radius: 8px;
+  border: solid 1px var(--text-color-white-);
+  cursor: pointer;
+  color: var(--text-color-white-);
+  margin: auto;
+  margin-bottom: 20px;
+}*/
+
+.switch {
+  justify-content: center;
+  display: flex;
+  margin: 0 auto 15px;
+  display: block;
+  width: 64px;
+  height: 24px;
+  background-color: var(--buttons-link-);
+  backdrop-filter: blur(4px);
+  border: 1px solid white;
+  border-radius: 50px;
+  position: relative;
+}
+
+.switch button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff var(--switch-bg-) no-repeat center;
+  cursor: pointer;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+/*.switch button:hover {
+}*/
+
+.light .switch button {
+  right: 0;
+  left: initial;
+  border: 1px solid var(--text-color-white-);
+}
+
+.light .switch {
+  border: 1px solid var(--text-color-white-);
+}
+
+/*Fim do Primeiro Bloco*/
+
+/*Inicio do DevLinks*/
+.devlinks ul {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.devlinks ul button:hover {
+  background-color: var(--rgba-hover-button-);
+  border: 2px solid var(--text-color-white-);
+}
+
+.buttonslink {
+  width: 300px;
+  height: 65px;
+  padding: 10px;
+  font-size: 13;
+  font-weight: 500;
+  background-color: var(--buttons-link-);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  border: solid 1px var(--text-color-white-);
+  cursor: pointer;
+  color: var(--text-color-white-);
+  margin: auto;
+  transition: background 0.3s;
+}
+/*Fim do DevLinks*/
+
+/*Inicio do Social_logos*/
+/*arrumar o problema da font entre as logo links e o footer*/
+.social_logos {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  gap: 32px;
+  padding: 24px 0 24px 0;
+}
+
+.social_logos ion-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--rgba-gray-color-);
+  transition: all 0.5s;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.social_logos ion-icon:hover {
+  color: var(--text-color-black-);
+  font-size: 30px;
+  margin-inline: 5px;
+  background-color: var(--rgba-gray-color-);
+}
+/*Fim do Social_logos*/
+
+/*Inicio do Footer*/
+footer {
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  margin-top: auto;
+}
+
+footer a {
+  text-decoration: underline;
+  font-size: 16px;
+}
+/*Fim do Footer*/

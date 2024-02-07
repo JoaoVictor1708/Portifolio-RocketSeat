@@ -1,0 +1,70 @@
+/* Reset CSS */
+
+/* Box-sizing border-box para todos os elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remover margens e preenchimentos padrão */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remover estilos padrão da lista */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Ajustar estilos padrão da tipografia */
+body {
+  line-height: 1.5;
+}
+
+/* Remover decoração de link padrão e ajustar cores */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remover decoração de foco padrão */
+a:focus {
+  outline: none;
+}
+
+/* Remover estilo padrão de tabela */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reiniciar estilos para elementos embutidos */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adicionar uma linha de base padrão para o corpo */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Adicionar estilos específicos do projeto abaixo deste comentário */
