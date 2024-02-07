@@ -36,11 +36,10 @@ body * {
 }
 
 #container {
-  box-sizing: border-box;
   padding: 0 24px;
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   height: 712px;
-  border-radius: 15px;
   margin: 56px auto 0;
 }
 
@@ -136,7 +135,8 @@ body * {
 }
 
 .buttonslink {
-  width: 300px;
+  width: 100%;
+  max-width: 588px;
   height: 65px;
   padding: 10px;
   font-size: 13;
