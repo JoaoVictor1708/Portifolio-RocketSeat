@@ -60,11 +60,12 @@ body * {
   border-radius: 50%;
 }
 
-#instaprofile {
+#myrocketprofile {
   color: var(--text-color-white-);
   font-weight: 540;
   margin-bottom: 20px;
   line-height: 24px;
+  text-decoration: underline;
 }
 
 .switch {

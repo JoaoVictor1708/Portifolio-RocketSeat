@@ -16,3 +16,15 @@ function ToggleMode() {
     img.setAttribute("alt", "Imagem do avatar do dev no modo dark")
   }
 }
+
+function MyApresentation(){
+  alert(
+  "Olá, meu nome é João Victor, tenho 15 anos e estou a procura de retomar e aprimorar meus conhecimentos sobre programação. Ja estudei um pouco de Html, Css, JavaScript e Java"
+)
+}
+
+function Myportifolio(){
+  alert(
+    "Veja meu portifólio acessando meu perfil na Rocketseat, GitHub ou Linkedin"
+  )
+}
