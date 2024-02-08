@@ -6,10 +6,13 @@ function ToggleMode() {
   const img = document.querySelector("#imgdev img")
 
   if (html.classList.contains("light")) {
-    img.setAttribute("src", "./assets/assets/avatar-light.png")
+    img.setAttribute("src", "./assets/AvatarPast/Img-avatar-light-mode.jpg")
     img.setAttribute("alt", "Imagem do avatar do dev no modo light")
   } else {
-    img.setAttribute("src", "./assets/assets/avatar.png")
+    img.setAttribute(
+      "src",
+      "./assets/AvatarPast/IMG_20231127_204834_515.png.jpg"
+    )
     img.setAttribute("alt", "Imagem do avatar do dev no modo dark")
   }
 }
