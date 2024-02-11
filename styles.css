@@ -4,7 +4,7 @@
   --rgba-gray-color-: rgba(255, 255, 255, 0.8);
   --text-color-black-: #000000;
   --buttons-link-: rgba(255, 255, 255, 0.02);
-  --bg-body-: url(/assets/Bg-MediaQueries/bg-mobile.jpg);
+  --bg-body: url("./assets/Bg-MediaQueries/bg-mobile.jpg");
   --switch-bg-: url(/assets/Switch-icons/moon-stars.svg);
   --switch-slide-: rgba(255, 255, 255, 0.5);
 }
@@ -15,7 +15,7 @@
   --rgba-gray-color-: rgba(0, 0, 0, 0.8);
   --text-color-black-: #ffffff;
   --buttons-link-: rgba(0, 0, 0, 0.05);
-  --bg-body-: url(/assets/Bg-MediaQueries/bg-mobile-light.jpg);
+  --bg-body: url(/assets/Bg-MediaQueries/bg-mobile-light.jpg);
   --switch-bg-: url(/assets/Switch-icons/sun.svg);
   --switch-slide-: rgba(0, 0, 0, 0.5);
 }
@@ -28,7 +28,7 @@ body {
 
   /*short hand ou atalho*/
   /*ordem* color img, repeat, position, size*/
-  background: var(--bg-body-) no-repeat top center/cover;
+  background: var(--bg-body) no-repeat top center/cover;
   font-size: 16px;
   height: 100vh;
 }
@@ -193,10 +193,10 @@ footer a {
 /*Media Queries*/
 @media (min-width: 700px) {
   :root {
-    --bg-body-: url(/assets/assets/bg-desktop.jpg);
+    --bg-body: url(/assets/assets/bg-desktop.jpg);
   }
   .light {
-    --bg-body-: url(/assets/assets/bg-desktop-light.jpg);
+    --bg-body: url(/assets/assets/bg-desktop-light.jpg);
   }
 }
 
