@@ -4,8 +4,8 @@
   --rgba-gray-color-: rgba(255, 255, 255, 0.8);
   --text-color-black-: #000000;
   --buttons-link-: rgba(255, 255, 255, 0.02);
-  --bg-body-: url(assets/assets/bg-mobile.jpg);
-  --switch-bg-: url(assets/assets/moon-stars.svg);
+  --bg-body-: url(/assets/assets/bg-mobile.jpg);
+  --switch-bg-: url(/assets/assets/moon-stars.svg);
   --switch-slide-: rgba(255, 255, 255, 0.5);
 }
 
@@ -15,8 +15,8 @@
   --rgba-gray-color-: rgba(0, 0, 0, 0.8);
   --text-color-black-: #ffffff;
   --buttons-link-: rgba(0, 0, 0, 0.05);
-  --bg-body-: url(assets/assets/bg-mobile-light.jpg);
-  --switch-bg-: url(assets/assets/sun.svg);
+  --bg-body-: url(/assets/assets/bg-mobile-light.jpg);
+  --switch-bg-: url(/assets/assets/sun.svg);
   --switch-slide-: rgba(0, 0, 0, 0.5);
 }
 
@@ -193,10 +193,10 @@ footer a {
 /*Media Queries*/
 @media (min-width: 700px) {
   :root {
-    --bg-body-: url(assets/assets/bg-desktop.jpg);
+    --bg-body-: url(/assets/assets/bg-desktop.jpg);
   }
   .light {
-    --bg-body-: url(assets/assets/bg-desktop-light.jpg);
+    --bg-body-: url(/assets/assets/bg-mobile-light.jpg);
   }
 }
 
